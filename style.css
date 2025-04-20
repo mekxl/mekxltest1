@@ -1,47 +1,48 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background: #111;
-  color: #fff;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #000000, #8b0000);
+  color: #ffffff;
 }
 
 header {
-  background: #222;
-  padding: 2rem;
+  padding: 3rem 1rem;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+header p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ccc;
 }
 
 .musicas {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
   padding: 2rem;
 }
 
 .musica {
-  background: #1c1c1c;
-  padding: 1rem;
-  border-radius: 8px;
-  width: 250px;
-  text-align: center;
-}
-
-.musica img {
-  max-width: 100%;
-  border-radius: 6px;
-}
-
-.links a {
-  display: inline-block;
-  margin: 0.5rem;
-  color: #1db954;
-  text-decoration: none;
+  width: 90%;
+  max-width: 700px;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background: #222;
+  padding: 2rem;
   color: #aaa;
+  font-size: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 4rem;
 }
