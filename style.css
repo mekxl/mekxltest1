@@ -1,9 +1,29 @@
+/* Fundo animado */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom right, #000000, #8b0000);
   color: #ffffff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, #000000, #8b0000, #000000, #8b0000);
+  background-size: 400% 400%;
+  animation: backgroundShift 20s ease infinite;
+  z-index: -1;
+}
+
+@keyframes backgroundShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 header {
@@ -31,6 +51,8 @@ header p {
   align-items: center;
   gap: 3rem;
   padding: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .musica {
@@ -45,4 +67,6 @@ footer {
   font-size: 0.9rem;
   background-color: rgba(0, 0, 0, 0.6);
   margin-top: 4rem;
+  position: relative;
+  z-index: 1;
 }
