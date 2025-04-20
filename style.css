@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #111;
+  color: #fff;
+}
+
+header {
+  background: #222;
+  padding: 2rem;
+  text-align: center;
+}
+
+.musicas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.musica {
+  background: #1c1c1c;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+}
+
+.musica img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 0.5rem;
+  color: #1db954;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #aaa;
+}
